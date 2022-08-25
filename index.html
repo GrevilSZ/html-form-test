@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Unlock" />
+    <title>Inscripción al Clash</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Inscripción al Clash</h1>
+          <p id="description" class="description text-center">
+            Gracias por tomarte el tiempo de responder esta encuesta.
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nickname</label>
+            <input
+              type="text"
+              name="nickname"
+              id="name"
+              class="form-control"
+              placeholder="Ingresa tu nickname"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Correo</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Ingresa tu correo electrónico"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="rank-label" for="name">Rango actual</label>
+            <input
+              type="text"
+              name="rango"
+              id="rango"
+              class="form-control"
+              placeholder="Ingresa tu rango (opcional)"
+            />
+          </div>
+          <div class="form-group">
+            <p>Cuál es tu línea main?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Selecciona tu línea</option>
+              <option value="top">Toplane</option>
+              <option value="jungla">Jungla</option>
+              <option value="mid">Midlane</option>
+              <option value="adc">ADC</option>
+              <option value="support">Support</option>
+              <option value="inde">No me decido</option>
+            </select>
+          </div>
+      
+          <div class="form-group"><p>Cómo consideras tu estilo de juego?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="agre"
+                type="radio"
+                class="input-radio"
+                checked
+              />Agresivo</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="def"
+                type="radio"
+                class="input-radio"
+              />Defensivo</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="equilibrado"
+                type="radio"
+                class="input-radio"
+              />Equilibrado</label
+            >
+          </div>
+      <div class="form-group">
+            <label id="number-label" for="number"
+              >Cuántas horas al día dedicas a jugar LoL?<span class="clue">(opcional)</span></label
+            >
+            <input
+              type="number"
+              name="hours"
+              id="number"
+              min="1"
+              max="24"
+              class="form-control"
+              placeholder="Horas"
+            />
+          </div>
+      
+          
+          <div class="form-group">
+            <p> En qué crees que podrías mejorar?<span class="clue">(Puedes marcar varias opciones)</span></p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="farm"
+                type="checkbox"
+                class="input-checkbox"
+              />Farmeo</label>
+            <label>
+              <input
+                name="prefer"
+                value="wardeo"
+                type="checkbox"
+                class="input-checkbox"
+              />Wardeo</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="early"
+                type="checkbox"
+                class="input-checkbox"
+              />Early Game</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="midg"
+                type="checkbox"
+                class="input-checkbox"
+              />Mid Game</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="lateg"
+                type="checkbox"
+                class="input-checkbox"
+              />Late Game</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="posicionamiento"
+                type="checkbox"
+                class="input-checkbox"
+              />Poicionamiento en Team Fights</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="comms"
+                type="checkbox"
+                class="input-checkbox"
+              />Comunicación</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="matchups"
+                type="checkbox"
+                class="input-checkbox"
+              />Matchups de Línea</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="tracking"
+                type="checkbox"
+                class="input-checkbox"
+              />Trackeo del jungla</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="macro"
+                type="checkbox"
+                class="input-checkbox"
+              />Macro game y control de Objetivos</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="otros"
+                type="checkbox"
+                class="input-checkbox"
+              />Otros<span class="clue">(Especifique en el cuadro debajo)</span></label
+            >
+             <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Indique en qué otras cosas podría mejorar..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Enviar Formulario
+            </button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
